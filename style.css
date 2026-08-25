@@ -172,6 +172,30 @@ body.embed .volume-control input {
   accent-color: #777777;
 }
 
+body.embed .controls-help {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.55);
+  text-align: left;
+}
+
+body.embed .controls-title {
+  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+body.embed .controls-help span {
+  display: inline-block;
+  width: 70px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 body.embed .community-logo {
   position: absolute;
   right: 18px;
