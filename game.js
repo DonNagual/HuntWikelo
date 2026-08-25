@@ -1184,7 +1184,7 @@ class HuntWikeloCore {
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillStyle = "rgba(255, 255, 255, " + this.textAlpha + ")";
-            ctx.font = "small-caps " + this.TEXT_SIZE + "px dejavu sans mono";
+            ctx.font = "small-caps " + this.TEXT_SIZE + "px monospace";
             ctx.fillText(this.text, this.canv.width / 2, this.canv.height * 0.75);
             this.textAlpha -= (1.0 / this.TEXT_FADE_TIME / this.FPS);
         }
@@ -1200,14 +1200,14 @@ class HuntWikeloCore {
         ctx.textAlign = "right";
         ctx.textBaseline = "middle";
         ctx.fillStyle = "white";
-        ctx.font = this.TEXT_SIZE + "px dejavu sans mono";
+        ctx.font = this.TEXT_SIZE + "px monospace";
         ctx.fillText(this.score, this.canv.width / 2, this.SHIP_SIZE);
         
         // high score
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.fillStyle = "white";
-        ctx.font = (this.TEXT_SIZE * 0.6) + "px dejavu sans mono";
+        ctx.font = (this.TEXT_SIZE * 0.6) + "px monospace";
         ctx.fillText("HIGH: " + this.scoreHigh, this.canv.width / 4, this.SHIP_SIZE);
 
         // laser hits on Wikelo
