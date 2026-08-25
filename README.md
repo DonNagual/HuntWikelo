@@ -19,6 +19,16 @@ und begib dich auf die Jagd nach **Wikelo**.
 
 Das Projekt befindet sich weiterhin in Entwicklung.
 
+## ⌨️ Steuerung
+
+| Taste | Funktion |
+|---|---|
+| `W` | Schub nach vorn |
+| `A` / `D` | Nach links / rechts wenden |
+| `Space` | Feuer |
+| `Enter` | Start / Pause / Weiter |
+| `Escape` | Pause / Ende |
+
 ## 🛠️ Technik
 
 * HTML5
