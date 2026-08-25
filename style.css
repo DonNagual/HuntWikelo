@@ -1,0 +1,189 @@
+@import url(/css/fonts.css);
+
+/* ---------- Base / Reset ---------- */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+}
+
+/* ---------- HOST (index.html) ---------- */
+
+body.host {
+    background: #d2d2d2;
+    color: #000000;
+    padding: 24px;
+}
+
+body.host .app {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.legal-notice {
+  max-width: 1280px;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.wikelo-slot {
+    width: 100%;
+    max-width: 1280px;
+    background: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 0 15px 10px rgba(193,134,75,0.35);
+}
+
+.wikelo-slot iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  background: #000000;
+}
+
+/* ---------- EMBED (embed.html) ---------- */
+body.embed {
+  background: #000;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body.embed .stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body.embed canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: crosshair;
+}
+
+body.embed .overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+body.embed .overlay h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+body.embed .overlay p {
+  margin: 0;
+  opacity: 0.85;
+}
+
+body.embed button {
+  font-family: var(--font-ui);
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+body.embed button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+body.embed .embed-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.55fr;
+  gap: 10px;
+  width: 280px;
+}
+
+body.embed .embed-controls button {
+  width: 100%;
+}
+
+body.embed .ship-selection {
+  display: grid;
+  grid-template-columns: 1fr 70px 1fr;
+  align-items: center;
+  gap: 10px;
+  width: 280px;
+}
+
+body.embed .ship-option {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  width: 100%;
+  padding: 6px 14px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  opacity: 0.35;
+}
+
+body.embed .ship-option.active {
+  opacity: 1;
+  border-color: rgba(255,255,255,0.25);
+}
+
+body.embed .age-switch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+body.embed .age-switch input {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+}
+
+body.embed .volume-control {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 230px;
+}
+
+body.embed .volume-control input {
+  flex: 1;
+  cursor: pointer;
+  accent-color: #777777;
+}
+
+body.embed .community-logo {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 80px;
+  height: auto;
+  opacity: 0.65;
+  pointer-events: none;
+  z-index: 20;
+}
+
+@media (max-width: 600px) {
+  body.host { padding: 12px; }
+  body.embed .overlay h1 { font-size: 28px; }
+}

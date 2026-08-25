@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hunt Wikelo – Embed</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="embed">
+    <section class="stage">
+        <canvas id="game" width="1280" height="720"></canvas>
+
+        <div id="overlay" class="overlay">
+            <h1>Hunt Wikelo</h1>
+            <p>Drück <b>Start</b> oder <b>Enter</b>.</p>
+
+            <div class="embed-controls">
+                <button id="btnStart" type="button">Start</button>
+                <button id="btnStop" type="button" disabled>Ende</button>
+                <button id="btnFullscreen" type="button">Fullscreen</button>
+            </div>
+
+            <div id="shipSelection" class="ship-selection">
+                <div id="shipCutlass" class="ship-option active">
+                    Cutlass
+                </div>
+                <label class="age-switch">
+                    <span>Ü18</span>
+                    <input id="shipAgeCheck" type="checkbox">
+                </label>
+                <div id="shipHullC" class="ship-option">
+                    Hull-C
+                </div>
+            </div>
+
+            <div id="volumeControl" class="volume-control">
+                <span>Volumen</span>
+                <input id="volumeSlider" type="range" min="0" max="100" value="50">
+            </div>
+        </div>
+        <img class="community-logo" src="./assets/images/MadeByTheCommunity_White.png" alt="Made by the Community" />
+    </section>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
